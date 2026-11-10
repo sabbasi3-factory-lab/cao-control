@@ -1,0 +1,48 @@
+{
+  "$schema": "https://raw.githubusercontent.com/githubnext/gh-cao/main/.github/workflows/shared/cao.schema.json",
+  "control-plane": {
+    "activity": {
+      "public-only": true,
+      "repositories": [
+        "sabbasi3-factory-lab/cao-control",
+        "sabbasi3-factory-lab/chrono-node-rs"
+      ]
+    },
+    "campaigns": {},
+    "marketplace": {
+      "registries": [
+        {
+          "auth": {
+            "type": "none"
+          },
+          "id": "official",
+          "name": "Official CAO catalog",
+          "ref": "main",
+          "repository": "githubnext/gh-cao"
+        },
+        {
+          "auth": {
+            "type": "none"
+          },
+          "format": "workflows",
+          "id": "agentics",
+          "name": "Agentics workflows",
+          "path": "workflows",
+          "ref": "main",
+          "repository": "githubnext/agentics"
+        }
+      ]
+    },
+    "scope": {
+      "allowed-owners": [
+        "sabbasi3-factory-lab"
+      ],
+      "allowed-repositories": [
+        "sabbasi3-factory-lab/cao-control",
+        "sabbasi3-factory-lab/chrono-node-rs"
+      ]
+    }
+  },
+  "gh-aw-version": "v1.0.1",
+  "version": 1
+}
